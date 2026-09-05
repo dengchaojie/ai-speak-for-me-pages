@@ -1,7 +1,7 @@
 {
-  "latest_version": "1.4.0",
+  "latest_version": "1.5.0",
   "minimum_version": "1.0.0",
   "update_url": "https://apps.apple.com/app/id6797145997",
-  "release_notes": "输入一个关键词，3秒后用你自己的声音说出来。说不出口的，AI帮你说。",
+  "release_notes": "「我想说」— 无障碍沟通助手，专为有沟通障碍的用户设计，帮我说、帮我听、看图说，让表达和倾听不再困难。",
   "force_update": false
 }
