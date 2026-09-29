@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>触感音乐 HapticMusic - 技术支持</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 28px;
+            font-size: 15px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+            border-bottom: 2px solid #5856d6;
+            padding-bottom: 8px;
+            display: inline-block;
+        }
+
+        .qa-item {
+            margin-bottom: 20px;
+            padding: 16px;
+            background-color: #f5f7fa;
+            border-radius: 8px;
+        }
+
+        .qa-item .question {
+            font-weight: 600;
+            color: #4b49a8;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .qa-item .answer {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .section {
+            margin-top: 32px;
+        }
+
+        .requirements {
+            list-style: none;
+            padding: 0;
+        }
+
+        .requirements li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .requirements li::before {
+            content: "\2022";
+            position: absolute;
+            left: 4px;
+            color: #5856d6;
+            font-weight: bold;
+        }
+
+        .contact {
+            margin-top: 32px;
+            padding: 20px;
+            background-color: #f2f1fd;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .contact a {
+            color: #4b49a8;
+            text-decoration: none;
+            font-weight: 500;
+            word-break: break-all;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .contact .reply-note {
+            margin-top: 12px;
+            font-size: 13px;
+            color: #888;
+        }
+
+        .lang-nav {
+            text-align: center;
+            margin-bottom: 32px;
+            font-size: 14px;
+        }
+
+        .lang-nav a {
+            color: #4b49a8;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .lang-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .lang-nav span {
+            color: #ccc;
+            margin: 0 8px;
+        }
+
+        .lang-divider {
+            margin: 44px 0 32px;
+            border: none;
+            border-top: 1px solid #e5e5e5;
+        }
+
+        .footer-note {
+            margin-top: 28px;
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- ================= 中文 ================= -->
+        <section id="zh">
+            <h1>「触感音乐 HapticMusic」技术支持</h1>
+            <p class="subtitle">把音乐的节拍、强弱与情绪，变成看得见、感受得到的振动与画面。使用中遇到问题，请先参考以下内容。</p>
+
+            <p class="lang-nav"><a href="#en">English</a><span>|</span>简体中文</p>
+
+            <h2>常见问题</h2>
+
+            <div class="qa-item">
+                <p class="question">Q：为什么没有声音？</p>
+                <p class="answer">A：本应用主要面向听障用户，可以只靠振动与画面使用。若你需要声音，请依次检查：① 手机侧边的静音拨片是否处于静音状态；② 媒体音量是否被调得过低；③ 是否在「设置 → 声音」中关闭了「播放声音」。另外，「慢速感受」模式会自动静音，这是刻意的设计。</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q：为什么没有振动？</p>
+                <p class="answer">A：触觉振动需要设备具备振动马达（Taptic Engine）。请确认两件事：① 你在真机上使用——模拟器与部分老旧机型不支持触觉，此时「设置 → 触觉」里的开关会置灰并给出提示；② 已在「设置 → 触觉」中打开「触觉振动」。</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q：如何导入我自己的音乐？</p>
+                <p class="answer">A：在主页底部上滑呼出播放列表，点「导入音乐 / 视频」，从系统文件中选择一个音频或视频文件即可（支持常见音频与视频格式，如 mp3、m4a、mov、mp4）。如果选的是视频，App 会先自动抽取其中的音轨。分析全部在设备本地完成，导入的曲目会保存在曲库中，下次打开仍在。</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q：导入视频时提示「没有音轨，无法分析」？</p>
+                <p class="answer">A：说明所选视频文件本身不含音频轨道，无法生成音乐数据。请换一个自带声音的视频，或直接选择音频文件。</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q：导入的曲目为什么没有歌词？</p>
+                <p class="answer">A：逐字歌词需要专门的时间轴数据，只能随曲目一同提供，无法从音频中自动生成。因此导入的曲目只提供节拍、响度与情绪的可视化与振动，不含歌词字幕。这类曲目在列表中带有「本地」标签，以便与内置曲目区分。</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q：左右滑动，看到的分别是哪些画面？</p>
+                <p class="answer">A：主界面可左右滑动切换视图，依次是：浮动粒子（随音乐缓慢飘动）、响度波形（屏幕底部一条随音量强弱起伏流动的曲线）、音高频谱（低频在下、高频在上，能量在频段之间上下移动）。未播放时，音高页会显示 8 个待机圆球。</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q：某一页不见了，或者画面是空的？</p>
+                <p class="answer">A：在「设置 → 视觉」中可以分别开启或关闭「频率频谱」「响度波形」「全屏闪拍」。被关闭的视图不会再出现在滑动分页里；如果全部关闭，可滑动的页数会随之减少。请到「设置 → 视觉」中重新打开你需要的视图。</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q：全屏闪拍看着不舒服？</p>
+                <p class="answer">A：「全屏闪拍」会让整屏在每一拍闪烁一次。如果你对频闪敏感，或观看时感到不适，请在「设置 → 视觉」中关闭它。该功能默认关闭。</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q：「慢速感受」和「单曲循环」是什么？</p>
+                <p class="answer">A：两项都在「设置 → 播放」中。<br><br>慢速感受：以半速播放，把重音之间的间隔拉长，便于逐个感受节奏与旋律走向；此模式下会自动静音，专注于振动与视觉。<br><br>单曲循环：当前曲目播放结束后自动从头重播，方便反复感受同一首。默认开启。</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q：App 会收集我的数据吗？</p>
+                <p class="answer">A：音乐播放、音频分析与可视化完全在你的设备上完成，你导入的音乐文件不会被上传。设备信息与使用数据通过友盟 SDK 用于统计分析和崩溃排查。App 无广告。详情请查看应用内的「隐私政策」。</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q：画面和振动好像和音乐对不上？</p>
+                <p class="answer">A：可视化与触觉效果是对音乐内容（节拍、强弱、情绪）的艺术化呈现，用于帮助你感受音乐的走势，不保证与音频逐帧精确对应。</p>
+            </div>
+
+            <div class="section">
+                <h2>系统要求</h2>
+                <ul class="requirements">
+                    <li>iOS 16.0 或更高版本</li>
+                    <li>iPhone 或 iPad</li>
+                    <li>触觉振动需在支持 Taptic Engine 的真机上使用（模拟器不支持）</li>
+                    <li>核心功能完全在设备本地运行，无需网络连接</li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h2 style="border-bottom: none; display: block; padding-bottom: 0; margin-top: 0;">联系我们</h2>
+                <p>如果以上内容没有解决你的问题，欢迎通过以下方式联系我们：</p>
+                <p>邮箱：<a href="mailto:913737194@qq.com">913737194@qq.com</a></p>
+                <p>你也可以在 App 内「设置 → 反馈与分享 → 意见反馈」直接给我们发邮件。</p>
+                <p class="reply-note">我们通常会在 48 小时内回复。</p>
+            </div>
+        </section>
+
+        <hr class="lang-divider">
+
+        <!-- ================= English ================= -->
+        <section id="en" lang="en">
+            <h1>HapticMusic &mdash; Support</h1>
+            <p class="subtitle">HapticMusic turns a song's beat, dynamics, and mood into vibration and light. If you run into a problem, please check the answers below first.</p>
+
+            <p class="lang-nav"><a href="#zh">&#20013;&#25991;</a><span>|</span>English</p>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="qa-item">
+                <p class="question">Q: Why is there no sound?</p>
+                <p class="answer">A: HapticMusic is designed primarily for deaf and hard-of-hearing users, so it works with vibration and visuals alone. If you do want sound, check these in order: 1) the Ring/Silent switch on the side of your iPhone; 2) the media volume level; 3) whether "Play Sound" has been turned off under Settings &rarr; Sound. Note that Slow Mode mutes audio automatically &mdash; that is by design.</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q: Why is there no vibration?</p>
+                <p class="answer">A: Haptics require a vibration motor (Taptic Engine). Please confirm two things: 1) you are using a real device &mdash; the Simulator and some older models do not support haptics, and the switches under Settings &rarr; Haptics will be greyed out with a notice; 2) "Haptic Vibration" is turned on under Settings &rarr; Haptics.</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q: How do I import my own music?</p>
+                <p class="answer">A: Swipe up from the bottom of the main screen to open the playlist, then tap "Import Music / Video" and pick an audio or video file from the system file picker (common formats such as mp3, m4a, mov, and mp4 are supported). If you choose a video, the audio track is extracted automatically first. All analysis runs entirely on your device, and imported tracks stay in your library for next time.</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q: I got "no audio track, cannot analyze" when importing a video?</p>
+                <p class="answer">A: The video file you selected does not contain an audio track, so no music data can be generated from it. Please choose a video that has sound, or select an audio file instead.</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q: Why do imported tracks have no lyrics?</p>
+                <p class="answer">A: Word-by-word lyrics require a dedicated timing track that must be supplied along with the song; they cannot be generated from audio alone. Imported tracks therefore offer beat, loudness, and mood visualization and haptics, but no lyric subtitles. These tracks are marked with a "Local" tag in the list to distinguish them from built-in songs.</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q: What can I see when I swipe between views?</p>
+                <p class="answer">A: Swipe left and right on the main screen to switch views: ambient particles (drifting gently with the music), the loudness wave (a curve along the bottom of the screen that rises and falls with volume), and the pitch spectrum (low frequencies at the bottom, high at the top, with energy moving between bands). When nothing is playing, the pitch view shows 8 idle circles.</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q: A view is missing, or the screen looks empty?</p>
+                <p class="answer">A: Under Settings &rarr; Visuals you can turn "Frequency Spectrum", "Loudness Wave", and "Beat Flash" on or off individually. A disabled view no longer appears in the swipeable pages; if you disable all of them, the number of pages decreases accordingly. Re-enable the ones you need under Settings &rarr; Visuals.</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q: Beat Flash is uncomfortable to look at?</p>
+                <p class="answer">A: "Beat Flash" makes the whole screen flash once per beat. If you are sensitive to flashing light, or it feels unpleasant, please turn it off under Settings &rarr; Visuals. It is off by default.</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q: What are "Slow Mode" and "Loop"?</p>
+                <p class="answer">A: Both are under Settings &rarr; Playback.<br><br>Slow Mode: plays at half speed, stretching the gaps between accents so you can take in the rhythm and melody one at a time. Audio is muted automatically in this mode, focusing on vibration and visuals.<br><br>Loop: replays the current track from the beginning after it ends, handy for experiencing the same song repeatedly. On by default.</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q: Does the app collect my data?</p>
+                <p class="answer">A: Music playback, audio analysis, and visualization all happen entirely on your device, and the music files you import are never uploaded. Device information and usage data are collected through the Umeng SDK for analytics and crash diagnostics. The app contains no ads. See the Privacy Policy in the app for details.</p>
+            </div>
+
+            <div class="qa-item">
+                <p class="question">Q: The visuals and vibration don't seem to match the music exactly?</p>
+                <p class="answer">A: The visuals and haptics are an artistic interpretation of the music's content (beat, dynamics, mood). They are meant to help you follow the shape of the music, and are not guaranteed to match the audio frame by frame.</p>
+            </div>
+
+            <div class="section">
+                <h2>Requirements</h2>
+                <ul class="requirements">
+                    <li>iOS 16.0 or later</li>
+                    <li>iPhone or iPad</li>
+                    <li>Haptic vibration requires a real device with a Taptic Engine (not supported in the Simulator)</li>
+                    <li>Core features run entirely on-device and need no network connection</li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h2 style="border-bottom: none; display: block; padding-bottom: 0; margin-top: 0;">Contact Us</h2>
+                <p>If the answers above did not solve your problem, please get in touch:</p>
+                <p>Email: <a href="mailto:913737194@qq.com">913737194@qq.com</a></p>
+                <p>You can also email us directly from within the app via Settings &rarr; Feedback &amp; Share &rarr; Send Feedback.</p>
+                <p class="reply-note">We usually reply within 48 hours.</p>
+            </div>
+        </section>
+
+        <p class="footer-note">本页面适用于「触感音乐 HapticMusic」iOS 应用 &middot; This page applies to the HapticMusic iOS app.</p>
+    </div>
+</body>
+</html>
